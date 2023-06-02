@@ -66,6 +66,7 @@ hr {
   font-size: 16px;
   top: 0;
   left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-nav .nav-link {
   padding: 0 20px;
@@ -133,6 +134,11 @@ hr {
 }
 #home span {
   color: #fa2878;
+  font-weight: 700;
+}
+#home .span2 {
+  font-size: 3rem;
+  font-weight: 800;
 }
 #new .one img {
   width: 100%;
@@ -238,4 +244,47 @@ hr {
   height: 150px;
   background-size: cover;
   display: flex;
+}
+footer {
+  background-color: #e7e7e7;
+}
+footer h5 {
+  color: #1d1d1d;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+footer h6 {
+  color: #1d1d1d;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+footer li {
+  padding-bottom: 4px;
+}
+footer li a {
+  font-size: 0.8rem;
+  color: #1d1d1d;
+}
+footer li a:hover {
+  color: #fa2878;
+}
+footer p {
+  color: #1d1d1d;
+  font-size: 0.8rem;
+}
+footer .copyright a {
+  color: #1d1d1d;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+footer .copyright a:hover {
+  color: #fff;
+  background-color: #fa2878;
 }
