@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,68 +21,338 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./img/favicon.png" />
-    <title>Pethome Veteriner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .product img{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+      }
+      #featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+        background-color: rgb(94, 94, 94);
+      }
+      #featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover a{
+        background-color: #fa2878;
+        color: #fff;
+      }
+      .pagination a{
+        color: #000;
+      }
+    </style>
+    <title>Mağaza</title>
   </head>
   <body>
-    <header>
-      <h1><span>pethome veteriner</span></h1>
-    </header>
-    <!-- navbar -->
-    <nav>
-      <a href="#Home">Home</a>
-      <a href="#clinic">Clinic</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+<!-- ------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <div class="container">
+        <img class="logo" src="./img/logo1.1.png" alt="logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><ion-icon id="bar" name="menu"></ion-icon></ion-icon></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Mağaza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkında</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">İletişim</a>
+            </li>
+            <li class="nav-item">
+                <ion-icon name="search-outline"></ion-icon>
+                <ion-icon name="bag-outline"></ion-icon>
+            </li>
+        </div>
+      </div>
     </nav>
-    <!-- end navbar -->
-    <!--  -->
-    <section id="clinic">
-      <div class="clinic-pic">
-        <img src="./img/logo1.jpg" alt="" />
+
+    <section id="featured" class="my-5 py-5">
+      <div class="container mt-5 py-5">
+        <h2 class="font-weight-bold">Bize Özel</h2>
+        <hr>
+        <p>YokYokModa'nın yeni sezon ürünlerine göz atabilirsiniz.</p>
       </div>
-      <p>
-        Hi there 👍 My name is ilkay Öztürk! I'm a veterinarian.I Like to heal
-        animals ...
-      </p>
-    </section>
-    <!--  -->
-    <section id="services" class="services-section">
-      <h2>Services</h2>
-      <figure>
-        <img src="./img/pethome4.jpg" alt="dog" />
-
-        <img src="./img/pethome3.jpg" alt="cat" />
-
-        <img src="./img/pethome5.jpg" alt="" />
-
-        <img src="./img/pethome6.jpg" alt="" />
-      </figure>
-    </section>
-    <!--  -->
-    <section id="contact">
-      <h3>Contact Us</h3>
-      <div class="contact">
-        <a href="https://github.com/ilkaytech/"
-          ><i class="fa-brands fa-github"></i>Github</a
-        >
-        <a href="https://www.instagram.com/ilkaytech/"
-          ><i class="fa-brands fa-instagram"></i>İnstagram</a
-        >
-        <a href="https://twitter.com/ilkaytech"
-          ><i class="fa-brands fa-twitter"></i>Twitter</a
-        >
-        <a href="https://www.linkedin.com/in/ilkaytech/"
-          ><i class="fa-brands fa-linkedin"></i>Linkedin</a
-        >
-        <h4>Send Message</h4>
-        <form action="" class="form" method="get">
-          <input class="text" placeholder="User Name" />
-          <input type="e-mail" placeholder="e-mail" />
-          <input class="message" type="text" placeholder="Your Message" />
-          <button><i class="fa-solid fa-comment-sms"></i>SEND</button>
-        </form>
+      <div class="row mx-auto container">
+    <div onclick="window.location.href='sproduct.html'"; class="product col-lg-3 col-md-4 col-12 text-center">
+      <img class="img-fluid mb-3" src="./img/shop/1.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
       </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <!-- ---------------------- -->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/2.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/3.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/4.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <!-- ------------------------------- -->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/5.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <!-- ---------------------- -->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/6.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/7.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/8.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <!-- ---------------------- -->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/9.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <!-- ---------------------- -->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/10.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/11.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="./img/shop/12.jpg" alt="">
+      <div class="star">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">92.00 ₺</h4>
+      <button class="buy-btn">Sepete ekle</button>
+    </div>
+
+    <nav aria-label="...">
+      <ul class="pagination mt-5">
+        <li class="page-item disabled">
+          <a class="page-link">Önceki</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item " aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Sonraki</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ---------------------- -->
+    </div>
     </section>
+
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+              <img class="logo2" src="img/logo1.png" alt=""> 
+              <p>YokYokModa Güçlü bir e-ticaret markasıdır. </p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Öne Çıkanlar</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#">Erkek</a></li>
+            <li><a href="#">Kadın</a></li>
+            <li><a href="#">Çocuk</a></li>
+            <li><a href="#">Genç</a></li>
+            <li><a href="#">Yeni Gelenler</a></li>
+            <li><a href="#">Ayakkabı</a></li>
+            <li><a href="#">Giysiler</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Bize Ulaşın</h5>
+          <div>
+            <h6 class="text-uppercase">Adres</h6>
+            <p>Çayırhan Mah.Çocuklara Sevgi Sk.ANK</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">İletişim</h6>
+            <p>0312 796 96 96</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">e-mail</h6>
+            <p>info@yokyokmoda.com</p>
+          </div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">İnstagram</h5>
+          <div class="row">
+            <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+            <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+          </div>
+        </div>
+    
+      </div>
+      <div class="copyright mt-5">
+        <div class="row container mx-autp">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <img src="img/payment.png" alt="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-2">
+           <p class="pt-3">Copyright ©2023 Tüm Hakları Saklıdır.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></ion-icon></a>
+    
+            
+           </div>
+        </div>
+      </div>
+    </footer>
+<!-- ------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
